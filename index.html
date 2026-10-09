@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2027 東京吃爆買爆｜8天7夜</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FFFCF6;--ink:#3E3A39;--coral:#F2A497;--yellow:#F6D27A;--blue:#A8D3E6;--green:#B9DAA5;--r:22px;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Huninn','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;line-height:1.6;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;background:var(--paper);border-bottom:3px solid var(--ink);padding:calc(env(safe-area-inset-top,0px) + 8px) 10px 8px;display:flex;gap:6px;overflow-x:auto;justify-content:center}
+nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);border:3px solid var(--ink);border-radius:999px;padding:2px 12px;font-size:14px;background:var(--paper)}
+nav a:nth-child(1){background:var(--coral)}nav a:nth-child(2){background:var(--yellow)}nav a:nth-child(3){background:var(--blue)}nav a:nth-child(4){background:var(--green)}nav a:nth-child(5){background:var(--coral)}
+main{max-width:640px;margin:0 auto;padding:calc(env(safe-area-inset-top,0px) + 70px) 14px 40px}
+section{margin-bottom:30px}
+h2{font-size:22px;margin:0 0 12px;display:inline-block;background:var(--yellow);border:3px solid var(--ink);border-radius:999px;padding:0 16px}
+.card{background:var(--paper);border:3px solid var(--ink);border-radius:var(--r);padding:16px;box-shadow:0 5px 0 var(--ink)}
+.hero{text-align:center;background:var(--blue);padding:0;overflow:hidden}
+.hero svg{display:block;width:100%;height:auto;border-bottom:3px solid var(--ink)}
+.hero .tx{background:var(--paper);padding:14px 12px 18px}
+.hero h1{margin:0;font-size:26px;line-height:1.3}
+.hero p{margin:4px 0 12px}
+.cd{display:inline-block;background:var(--coral);border:3px solid var(--ink);border-radius:var(--r);padding:6px 22px}
+.cd b{font-size:40px;line-height:1}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}
+.chip{border:3px solid var(--ink);border-radius:999px;padding:0 10px;font-size:13px;background:var(--green)}
+.flight{display:grid;gap:12px}
+.fl{display:flex;align-items:center;gap:10px;border:3px solid var(--ink);border-radius:var(--r);padding:12px}
+.fl:nth-child(1){background:var(--blue)}.fl:nth-child(2){background:var(--yellow)}
+.fl .big{font-size:30px}.fl small{display:block;font-size:13px}.fl b{font-size:18px}
+.arrow{flex:1;text-align:center}
+.days{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px;margin:0 -4px}
+.day{flex:0 0 auto;width:62px;border:3px solid var(--ink);border-radius:18px;background:var(--paper);color:var(--ink);font:inherit;padding:4px 0;cursor:pointer;line-height:1.25}
+.day small{display:block;font-size:11px}.day b{font-size:16px}
+.day[aria-selected=true]{background:var(--coral);box-shadow:0 4px 0 var(--ink);animation:pop .5s cubic-bezier(.3,1.7,.5,1)}
+.dh{background:var(--green);border:3px solid var(--ink);border-radius:var(--r);padding:10px 14px;margin-bottom:14px}
+.dh h3{margin:0;font-size:19px}.dh small{font-size:13px}
+#tl.pop{animation:pop .5s cubic-bezier(.3,1.7,.5,1)}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:4px dashed var(--ink)}
+.tl li{position:relative;margin:0 0 12px;background:var(--paper);border:3px solid var(--ink);border-radius:18px;padding:8px 12px}
+.tl li::before{content:"";position:absolute;left:-35px;top:14px;width:16px;height:16px;border-radius:50%;background:var(--yellow);border:3px solid var(--ink)}
+.tl li.must{background:#FFF1EE}.tl li.must::before{background:var(--coral)}
+.tm{font-size:13px;font-weight:bold;display:block}
+.tg{display:inline-block;font-size:12px;border:2px solid var(--ink);border-radius:999px;padding:0 8px;margin-left:6px;vertical-align:1px}
+.t-新幹線{background:var(--coral)}.t-電車,.t-地鐵{background:var(--blue)}.t-巴士,.t-包車{background:var(--yellow)}.t-纜車{background:var(--green)}.t-飛機{background:var(--blue)}.t-計程車{background:var(--yellow)}.t-移動{background:var(--green)}
+.must-tag{display:inline-block;font-size:12px;background:var(--coral);border:2px solid var(--ink);border-radius:999px;padding:0 8px;margin-right:6px;font-weight:bold}
+.note{border:3px dashed var(--ink);border-radius:18px;padding:8px 12px;background:var(--yellow);margin-top:6px;font-size:14px}
+.meals{font-size:14px;margin-top:6px}
+.todo{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.todo label{display:flex;gap:10px;align-items:center;border:3px solid var(--ink);border-radius:16px;padding:8px 12px;cursor:pointer;background:var(--paper)}
+.todo input{appearance:none;-webkit-appearance:none;width:26px;height:26px;border:3px solid var(--ink);border-radius:9px;background:var(--paper);flex:none;margin:0;display:grid;place-items:center}
+.todo input:checked{background:var(--green)}
+.todo input:checked::after{content:"✓";font-weight:bold;animation:pop .4s cubic-bezier(.3,1.7,.5,1)}
+.todo input:checked+span{text-decoration:line-through;opacity:.55}
+.prog{height:18px;border:3px solid var(--ink);border-radius:999px;margin-bottom:12px;overflow:hidden;background:var(--paper)}
+.prog i{display:block;height:100%;background:var(--green);width:0;transition:width .4s}
+.hotel{display:grid;gap:12px}
+.hotel .card:nth-child(1){background:var(--blue)}.hotel .card:nth-child(2){background:var(--yellow)}
+.hotel h3{margin:0 0 4px;font-size:18px}
+footer{text-align:center;font-size:13px;padding-bottom:20px}
+@keyframes pop{0%{transform:scale(.8) translateY(8px);opacity:.4}100%{transform:none;opacity:1}}
+@keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(14px)}}
+@keyframes run{0%{transform:translateX(-170px)}100%{transform:translateX(400px)}}
+@keyframes fall{0%{transform:translateY(-10px)}100%{transform:translateY(190px)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.cloud{animation:drift 7s ease-in-out infinite}.cloud.b{animation-duration:9s;animation-delay:-3s}
+.train{animation:run 9s linear infinite}
+.snow circle{animation:fall 6s linear infinite}
+.snow circle:nth-child(2){animation-delay:-1.5s;animation-duration:7s}.snow circle:nth-child(3){animation-delay:-3s}.snow circle:nth-child(4){animation-delay:-4.5s;animation-duration:8s}.snow circle:nth-child(5){animation-delay:-2s}
+.sun{animation:bob 4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav><a href="#home">首頁</a><a href="#flight">航班</a><a href="#plan">行程</a><a href="#todo">清單</a><a href="#stay">住宿</a></nav>
+<main>
+<section id="home" class="card hero">
+<svg viewBox="0 0 360 230" role="img" aria-label="富士山、東京鐵塔與新幹線的插圖">
+<rect width="360" height="230" fill="#A8D3E6"/>
+<g class="sun"><circle cx="300" cy="46" r="22" fill="#F2A497" stroke="#3E3A39" stroke-width="3"/></g>
+<g class="cloud" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"><path d="M30 60h60a14 14 0 0 0-6-24 18 18 0 0 0-34 4 12 12 0 0 0-20 20z"/></g>
+<g class="cloud b" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"><path d="M200 38h44a10 10 0 0 0-4-18 14 14 0 0 0-26 3 9 9 0 0 0-14 15z"/></g>
+<path d="M10 175 L128 50 Q140 40 152 50 L270 175Z" fill="#9BC4D9" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+<path d="M104 77 L128 50 Q140 40 152 50 L176 77 L160 71 L148 84 L138 70 L126 84 L118 71Z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+<g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"><path d="M296 76 L284 178 H308Z" fill="#F2A497"/><path d="M290 126 H302M287 150 H305" fill="none"/><rect x="288" y="98" width="16" height="8" rx="3" fill="#FFFCF6"/><path d="M296 76V62" fill="none"/></g>
+<path d="M0 172 Q90 150 180 172 T360 168 V230 H0Z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3"/>
+<path d="M0 205H360" stroke="#3E3A39" stroke-width="3" stroke-dasharray="10 6"/>
+<g class="train" stroke="#3E3A39" stroke-width="3"><rect x="0" y="178" width="60" height="24" rx="8" fill="#FFFCF6"/><rect x="64" y="178" width="60" height="24" rx="8" fill="#FFFCF6"/><path d="M128 202V190Q128 178 142 178H150Q172 180 176 202Z" fill="#FFFCF6"/><path d="M0 192H176" stroke="#F2A497" stroke-width="5"/><g fill="#A8D3E6"><rect x="10" y="183" width="10" height="7" rx="2"/><rect x="28" y="183" width="10" height="7" rx="2"/><rect x="74" y="183" width="10" height="7" rx="2"/><rect x="92" y="183" width="10" height="7" rx="2"/><path d="M140 183h10l8 7h-18z"/></g></g>
+<g class="snow" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2"><circle cx="40" cy="20" r="4"/><circle cx="110" cy="10" r="3"/><circle cx="190" cy="14" r="4"/><circle cx="250" cy="6" r="3"/><circle cx="330" cy="16" r="4"/></g>
+</svg>
+<div class="tx">
+<h1>2027 東京吃爆買爆</h1>
+<p>2027/01/09（六）～01/16（六）｜8天7夜</p>
+<div class="cd" id="cd"><small>出發倒數</small><br><b id="n">--</b> 天</div>
+<div class="chips"><span class="chip">🍣 美食</span><span class="chip">🛍️ 購物</span><span class="chip">❄️ 雪景</span><span class="chip">🗻 富士山</span><span class="chip">♨️ 溫泉</span></div>
+</div>
+</section>
+
+<section id="flight"><h2>✈️ 航班</h2>
+<div class="flight">
+<div class="fl"><span class="big">🛫</span><div><small>01/09（六）去程</small><b>台灣 → 羽田</b><small>11:00 抵達羽田機場</small></div></div>
+<div class="fl"><span class="big">🛬</span><div><small>01/16（六）回程</small><b>羽田 → 台灣</b><small>出發時間請依實際回程航班調整</small></div></div>
+</div></section>
+
+<section id="plan"><h2>🗓️ 每日行程</h2>
+<div class="days" id="days" role="tablist"></div>
+<div id="tl"></div>
+</section>
+
+<section id="todo"><h2>✅ 出發前待辦</h2>
+<div class="card"><div class="prog"><i id="bar"></i></div><ul class="todo" id="tdl"></ul></div></section>
+
+<section id="stay"><h2>🏨 住宿資訊</h2>
+<div class="hotel">
+<div class="card"><h3>千禧三井花園飯店 東京</h3><div>📍 銀座｜共 5 晚</div><div>🗓️ 01/09、01/12～01/15</div></div>
+<div class="card"><h3>界 藏王</h3><div>♨️ 溫泉旅館｜共 2 晚</div><div>🗓️ 01/10、01/11（約 17:00 抵達）</div></div>
+</div></section>
+<footer>🍡 旅途愉快，吃飽買滿再回家 🇹🇼</footer>
+</main>
+<script>
+var D=[
+{d:'01/09',w:'六',t:'東京・銀座美食',e:'🛍️🍔',n:'',m:'晚餐｜SHAKE SHACK＋FUKUMIMI',i:[['11:00','✈️ 抵達羽田機場','飛機'],['11:00～12:30','🧳 入境、領取行李'],['13:00','🏨 飯店寄放行李'],['13:00～17:30','🛍️ 銀座自由活動／購物'],['18:00','🍔 SHAKE SHACK Tokyo International Forum'],['19:17','🍲 FUKUMIMI GINZA 6',0,1],['20:50','🏨 返回飯店']]},
+{d:'01/10',w:'日',t:'東京 → 山形 → 藏王',e:'🚄',n:'',m:'午餐｜山形美食　晚餐｜藏王溫泉旅館',i:[['08:00','🏨 飯店出發'],['上午','🚄 搭乘山形新幹線前往山形','新幹線'],['11:30～11:40','📍 抵達山形站'],['12:00','🏘️ 七日町・御殿堰周邊散策'],['14:30～15:00','🥩 米澤牛 登起波 山形店',0,1],['16:15','🚌 前往藏王','移動'],['約17:00','♨️ 抵達「界 藏王」',0,1]]},
+{d:'01/11',w:'一',t:'藏王樹冰',e:'❄️🏔️',n:'日本成人之日連假，纜車建議提早搭乘',m:'',i:[['08:00','🏨 飯店出發'],['08:30','🚡 藏王纜車山麓站','纜車'],['08:45～09:00','❄️ 抵達樹冰高原站'],['09:00～12:00','🌨️ 藏王樹冰散策',0,1],['12:00','🚡 搭乘纜車下山','纜車'],['12:30','🏨 返回飯店'],['下午～晚上','♨️ 溫泉／飯店休閒']]},
+{d:'01/12',w:'二',t:'藏王 → 東京・雙牛美食',e:'🥩',n:'',m:'午餐｜人形町今半　晚餐｜肉屋の台所',i:[['08:00','🏨 飯店出發'],['09:00','🚄 山形站'],['上午','🚄 搭乘新幹線返回東京','新幹線'],['11:30～12:00','🏨 飯店寄放行李'],['13:00','🥩 人形町今半 銀座店',0,1],['14:30～18:00','🛍️ 銀座購物／自由活動'],['18:30','🥩 肉屋の台所 Ginza Premium'],['20:04','🏨 返回飯店']]},
+{d:'01/13',w:'三',t:'銀座・壽司＋飛驒牛',e:'🍣',n:'',m:'午餐｜梅丘壽司美登利　晚餐｜飛驒牛 馬喰一代',i:[['08:00～11:30','☀️ 早餐／自由活動'],['12:00','🍣 梅丘壽司美登利 銀座店',0,1],['13:30～17:30','🛍️ 銀座購物'],['18:00','🥩 飛驒牛一頭家 馬喰一代 銀座',0,1],['19:39','🏨 返回飯店']]},
+{d:'01/14',w:'四',t:'富士山・河口湖｜私人包車',e:'🗻',n:'',m:'午餐｜河口湖ほうとう　晚餐｜Shabusen 銀座',i:[['07:30','🚐 飯店出發','包車'],['09:30','🌸 新倉山淺間公園',0,1],['10:30','⛩️ 北口本宮富士淺間神社'],['11:30','💧 忍野八海'],['12:30','🍜 山梨名物「ほうとう」'],['14:00','🗻 河口湖'],['14:30','🚡 富士山全景纜車','纜車',1],['15:30','🌿 大石公園'],['16:00','🚐 返回東京','包車'],['18:30','🥢 Shabusen 銀座店'],['晚間','🏨 返回飯店']]},
+{d:'01/15',w:'五',t:'人形町・日本橋下町漫遊',e:'🏮🍡',n:'今日重點：人形町老街、水天宮、甘酒橫丁、小網神社、日本橋、下町美食',m:'午餐｜人形町下町美食',i:[['08:00','🏨 飯店早餐'],['09:00','🚇 前往人形町','地鐵'],['09:30','⛩️ 水天宮參拜',0,1],['10:00','🏮 人形町老街散策'],['10:30','🍡 傳統和菓子／老舖巡禮'],['11:00','🏮 甘酒橫丁漫步',0,1],['12:00','🍱 人形町午餐'],['13:30','🏮 人形町商店街自由活動'],['14:00','⛩️ 小網神社'],['15:00','🌉 日本橋周邊散步'],['16:00','☕ 咖啡／甜點時間'],['17:00','🚇 返回銀座','地鐵'],['約17:30','🏨 回飯店休息']]},
+{d:'01/16',w:'六',t:'東京 → 羽田 → 台灣',e:'✈️',n:'機場出發時間請依實際回程航班調整',m:'午餐｜敘敘苑',i:[['08:00','🧳 早餐＋整理行李'],['上午','🛍️ 銀座最後採買'],['10:30～11:00','🥩 敘敘苑 銀座Miyuki大道店'],['午餐後','🏨 返回飯店取行李'],['依航班','🚃 前往羽田機場','電車'],['依航班','🚕 或搭計程車前往','計程車'],['依航班','✈️ 搭機返回台灣 🇹🇼','飛機']]}
+];
+var T=['護照（效期 6 個月以上）','Visit Japan Web 入境登錄','買網卡／eSIM','兌換日圓現金','旅遊保險','確認山形新幹線、界 藏王訂位','確認富士山私人包車','預約餐廳（登起波、人形町今半、壽司美登利等）','保暖衣物：藏王樹冰很冷','退稅用護照＋大行李空間'];
+var tab=document.getElementById('days'),tl=document.getElementById('tl'),cur=0,first=true;
+function show(k){cur=k;
+tab.innerHTML=D.map(function(x,j){return '<button class="day" role="tab" aria-selected="'+(j==k)+'" data-k="'+j+'"><small>Day '+(j+1)+'</small><b>'+x.d+'</b><small>'+x.w+'</small></button>'}).join('');
+var x=D[k];
+tl.className='';
+tl.innerHTML='<div class="dh"><small>Day '+(k+1)+'｜'+x.d+'（'+x.w+'）</small><h3>'+x.e+' '+x.t+'</h3></div><ul class="tl">'+x.i.map(function(a){return '<li'+(a[3]?' class="must"':'')+'><span class="tm">'+a[0]+(a[2]?'<span class="tg t-'+a[2]+'">'+a[2]+'</span>':'')+'</span>'+(a[3]?'<span class="must-tag">必去</span>':'')+a[1]+'</li>'}).join('')+'</ul>'+(x.m?'<div class="meals card">🍴 '+x.m+'</div>':'')+(x.n?'<div class="note">📌 '+x.n+'</div>':'');
+void tl.offsetWidth;tl.className='pop';
+var b=tab.children[k];if(b&&!first){b.scrollIntoView({inline:'center',block:'nearest',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}
+first=false}
+tab.addEventListener('click',function(e){var b=e.target.closest('.day');if(b)show(+b.dataset.k)});
+show(0);
+var s0=new Date('2027-01-09T00:00:00+08:00'),e0=new Date('2027-01-17T00:00:00+08:00'),now=new Date(),dd=Math.ceil((s0-now)/864e5),cd=document.getElementById('cd');
+if(now>=e0)cd.innerHTML='旅程已完成 🍡';else if(now>=s0)cd.innerHTML='旅程進行中 🎌';else document.getElementById('n').textContent=dd;
+var st={};try{st=JSON.parse(localStorage.getItem('tokyo27')||'{}')}catch(e){}
+var ul=document.getElementById('tdl'),bar=document.getElementById('bar');
+ul.innerHTML=T.map(function(t,j){return '<li><label><input type="checkbox" data-j="'+j+'"'+(st[j]?' checked':'')+'><span>'+t+'</span></label></li>'}).join('');
+function pg(){bar.style.width=Math.round(100*T.filter(function(_,j){return st[j]}).length/T.length)+'%'}
+ul.addEventListener('change',function(e){st[e.target.dataset.j]=e.target.checked;try{localStorage.setItem('tokyo27',JSON.stringify(st))}catch(x){}pg()});
+pg();
+</script>
+</body>
+</html>

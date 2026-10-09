@@ -12,30 +12,29 @@
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:'Huninn','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;line-height:1.6;font-size:16px}
 nav{position:fixed;top:0;left:0;right:0;z-index:10;background:var(--paper);border-bottom:3px solid var(--ink);padding:calc(env(safe-area-inset-top,0px) + 8px) 10px 8px;display:flex;gap:6px;overflow-x:auto;justify-content:center}
-nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);border:3px solid var(--ink);border-radius:999px;padding:2px 12px;font-size:14px;background:var(--paper)}
+nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);border:3px solid var(--ink);border-radius:999px;padding:2px 12px;font-size:14px}
 nav a:nth-child(1){background:var(--coral)}nav a:nth-child(2){background:var(--yellow)}nav a:nth-child(3){background:var(--blue)}nav a:nth-child(4){background:var(--green)}nav a:nth-child(5){background:var(--coral)}
 main{max-width:640px;margin:0 auto;padding:calc(env(safe-area-inset-top,0px) + 70px) 14px 40px}
 section{margin-bottom:30px}
 h2{font-size:22px;margin:0 0 12px;display:inline-block;background:var(--yellow);border:3px solid var(--ink);border-radius:999px;padding:0 16px}
-.card{background:var(--paper);border:3px solid var(--ink);border-radius:var(--r);padding:16px;box-shadow:0 5px 0 var(--ink)}
+.card{background:var(--paper);border:3px solid var(--ink);border-radius:var(--r);padding:14px;box-shadow:0 5px 0 var(--ink)}
 .hero{text-align:center;background:var(--blue);padding:0;overflow:hidden}
 .hero svg{display:block;width:100%;height:auto;border-bottom:3px solid var(--ink)}
 .hero .tx{background:var(--paper);padding:14px 12px 18px}
-.hero h1{margin:0;font-size:26px;line-height:1.3}
-.hero p{margin:4px 0 12px}
+.hero h1{margin:0;font-size:26px;line-height:1.3}.hero p{margin:4px 0 12px}
 .cd{display:inline-block;background:var(--coral);border:3px solid var(--ink);border-radius:var(--r);padding:6px 22px}
 .cd b{font-size:40px;line-height:1}
 .chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}
 .chip{border:3px solid var(--ink);border-radius:999px;padding:0 10px;font-size:13px;background:var(--green)}
-.flight{display:grid;gap:12px}
-.fl{display:flex;align-items:center;gap:10px;border:3px solid var(--ink);border-radius:var(--r);padding:12px}
-.fl:nth-child(1){background:var(--blue)}.fl:nth-child(2){background:var(--yellow)}
-.fl .big{font-size:30px}.fl small{display:block;font-size:13px}.fl b{font-size:18px}
-.arrow{flex:1;text-align:center}
+.flight{display:grid;gap:10px}
+.fl{display:flex;align-items:center;gap:10px;border:3px solid var(--ink);border-radius:var(--r);padding:10px 12px}
+.fl:nth-child(1){background:var(--blue)}.fl:nth-child(2){background:var(--yellow)}.fl:nth-child(3){background:var(--green)}.fl:nth-child(4){background:var(--coral)}
+.fl .big{font-size:28px}.fl small{display:block;font-size:13px}.fl b{font-size:17px}
 .days{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px;margin:0 -4px}
 .day{flex:0 0 auto;width:62px;border:3px solid var(--ink);border-radius:18px;background:var(--paper);color:var(--ink);font:inherit;padding:4px 0;cursor:pointer;line-height:1.25}
 .day small{display:block;font-size:11px}.day b{font-size:16px}
 .day[aria-selected=true]{background:var(--coral);box-shadow:0 4px 0 var(--ink);animation:pop .5s cubic-bezier(.3,1.7,.5,1)}
+.ill{border:3px solid var(--ink);border-radius:var(--r);overflow:hidden;margin-bottom:12px}.ill svg{display:block;width:100%;height:auto}
 .dh{background:var(--green);border:3px solid var(--ink);border-radius:var(--r);padding:10px 14px;margin-bottom:14px}
 .dh h3{margin:0;font-size:19px}.dh small{font-size:13px}
 #tl.pop{animation:pop .5s cubic-bezier(.3,1.7,.5,1)}
@@ -45,10 +44,13 @@ h2{font-size:22px;margin:0 0 12px;display:inline-block;background:var(--yellow);
 .tl li.must{background:#FFF1EE}.tl li.must::before{background:var(--coral)}
 .tm{font-size:13px;font-weight:bold;display:block}
 .tg{display:inline-block;font-size:12px;border:2px solid var(--ink);border-radius:999px;padding:0 8px;margin-left:6px;vertical-align:1px}
-.t-新幹線{background:var(--coral)}.t-電車,.t-地鐵{background:var(--blue)}.t-巴士,.t-包車{background:var(--yellow)}.t-纜車{background:var(--green)}.t-飛機{background:var(--blue)}.t-計程車{background:var(--yellow)}.t-移動{background:var(--green)}
+.t-新幹線{background:var(--coral)}.t-電車,.t-地鐵,.t-飛機{background:var(--blue)}.t-巴士,.t-包車,.t-計程車{background:var(--yellow)}.t-纜車{background:var(--green)}
 .must-tag{display:inline-block;font-size:12px;background:var(--coral);border:2px solid var(--ink);border-radius:999px;padding:0 8px;margin-right:6px;font-weight:bold}
-.note{border:3px dashed var(--ink);border-radius:18px;padding:8px 12px;background:var(--yellow);margin-top:6px;font-size:14px}
-.meals{font-size:14px;margin-top:6px}
+.note{border:3px dashed var(--ink);border-radius:18px;padding:8px 12px;background:var(--yellow);margin-top:10px;font-size:14px}
+.meals{font-size:14px;margin-top:10px}
+.hc{margin-top:12px;background:var(--blue)}.hc h3{margin:0 0 4px;font-size:18px}.hc .lb{font-size:12px;display:inline-block;background:var(--paper);border:2px solid var(--ink);border-radius:999px;padding:0 8px;margin-bottom:4px}
+.mapbox iframe{width:100%;height:230px;border:3px solid var(--ink);border-radius:18px;margin-top:8px;background:var(--paper)}
+.mb{display:inline-block;border:3px solid var(--ink);border-radius:999px;padding:0 12px;margin:8px 6px 0 0;background:var(--yellow);color:var(--ink);font:inherit;font-size:14px;text-decoration:none;cursor:pointer}
 .todo{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .todo label{display:flex;gap:10px;align-items:center;border:3px solid var(--ink);border-radius:16px;padding:8px 12px;cursor:pointer;background:var(--paper)}
 .todo input{appearance:none;-webkit-appearance:none;width:26px;height:26px;border:3px solid var(--ink);border-radius:9px;background:var(--paper);flex:none;margin:0;display:grid;place-items:center}
@@ -57,20 +59,25 @@ h2{font-size:22px;margin:0 0 12px;display:inline-block;background:var(--yellow);
 .todo input:checked+span{text-decoration:line-through;opacity:.55}
 .prog{height:18px;border:3px solid var(--ink);border-radius:999px;margin-bottom:12px;overflow:hidden;background:var(--paper)}
 .prog i{display:block;height:100%;background:var(--green);width:0;transition:width .4s}
-.hotel{display:grid;gap:12px}
-.hotel .card:nth-child(1){background:var(--blue)}.hotel .card:nth-child(2){background:var(--yellow)}
-.hotel h3{margin:0 0 4px;font-size:18px}
 footer{text-align:center;font-size:13px;padding-bottom:20px}
 @keyframes pop{0%{transform:scale(.8) translateY(8px);opacity:.4}100%{transform:none;opacity:1}}
 @keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(14px)}}
 @keyframes run{0%{transform:translateX(-170px)}100%{transform:translateX(400px)}}
 @keyframes fall{0%{transform:translateY(-10px)}100%{transform:translateY(190px)}}
+@keyframes fall2{0%{transform:translateY(-6px)}100%{transform:translateY(80px)}}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-.cloud{animation:drift 7s ease-in-out infinite}.cloud.b{animation-duration:9s;animation-delay:-3s}
+@keyframes sw{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes sl{0%,100%{transform:translateX(-6px)}50%{transform:translateX(6px)}}
+@keyframes tw{0%,100%{transform:scale(.6);opacity:.5}50%{transform:scale(1.15);opacity:1}}
+.cloud,.cl{animation:drift 7s ease-in-out infinite}.cloud.b{animation-duration:9s;animation-delay:-3s}
 .train{animation:run 9s linear infinite}
 .snow circle{animation:fall 6s linear infinite}
 .snow circle:nth-child(2){animation-delay:-1.5s;animation-duration:7s}.snow circle:nth-child(3){animation-delay:-3s}.snow circle:nth-child(4){animation-delay:-4.5s;animation-duration:8s}.snow circle:nth-child(5){animation-delay:-2s}
-.sun{animation:bob 4s ease-in-out infinite}
+.sn circle{animation:fall2 4s linear infinite}.sn circle:nth-child(2){animation-delay:-1s}.sn circle:nth-child(3){animation-delay:-2s}.sn circle:nth-child(4){animation-delay:-3s}
+.sun,.bob{animation:bob 3.5s ease-in-out infinite}.b2{animation-delay:-1.6s}
+.sw{animation:sw 3s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 0}.d2{animation-delay:-1s}.d3{animation-delay:-2s}
+.sl{animation:sl 4s ease-in-out infinite}
+.tw{animation:tw 2.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -101,8 +108,10 @@ footer{text-align:center;font-size:13px;padding-bottom:20px}
 
 <section id="flight"><h2>✈️ 航班</h2>
 <div class="flight">
-<div class="fl"><span class="big">🛫</span><div><small>01/09（六）去程</small><b>台灣 → 羽田</b><small>11:00 抵達羽田機場</small></div></div>
-<div class="fl"><span class="big">🛬</span><div><small>01/16（六）回程</small><b>羽田 → 台灣</b><small>出發時間請依實際回程航班調整</small></div></div>
+<div class="fl"><span class="big">🛫</span><div><small>01/09（六）去程</small><b>老闆 &amp; 阿西小隊</b><small>11:00 抵達羽田機場</small></div></div>
+<div class="fl"><span class="big">🚆</span><div><small>01/09（六）去程</small><b>台中小隊</b><small>16:00 抵達銀座，飯店會合 Check in</small></div></div>
+<div class="fl"><span class="big">🚆</span><div><small>01/09（六）去程</small><b>玟樺小隊</b><small>19:00 抵達銀座，會合領房間鑰匙</small></div></div>
+<div class="fl"><span class="big">🛬</span><div><small>01/16（六）回程</small><b>羽田 → 台灣</b><small>各小隊原地解散前往機場，時間依實際航班</small></div></div>
 </div></section>
 
 <section id="plan"><h2>🗓️ 每日行程</h2>
@@ -110,41 +119,56 @@ footer{text-align:center;font-size:13px;padding-bottom:20px}
 <div id="tl"></div>
 </section>
 
+<section><h2>🍴 美食巡禮</h2>
+<div class="chips" style="justify-content:flex-start"><span class="chip">🥩 界 藏王 懷石料理</span><span class="chip">🥩 極味屋</span><span class="chip">🥩 肉屋の台所</span><span class="chip">🍜 河口湖ほうとう</span><span class="chip">🥢 Shabusen</span></div></section>
+
 <section id="todo"><h2>✅ 出發前待辦</h2>
 <div class="card"><div class="prog"><i id="bar"></i></div><ul class="todo" id="tdl"></ul></div></section>
 
-<section id="stay"><h2>🏨 住宿資訊</h2>
-<div class="hotel">
-<div class="card"><h3>千禧三井花園飯店 東京</h3><div>📍 銀座｜共 5 晚</div><div>🗓️ 01/09、01/12～01/15</div></div>
-<div class="card"><h3>界 藏王</h3><div>♨️ 溫泉旅館｜共 2 晚</div><div>🗓️ 01/10、01/11（約 17:00 抵達）</div></div>
-</div></section>
-<footer>🍡 旅途愉快，吃飽買滿再回家 🇹🇼</footer>
+<section id="stay"><h2>🏨 住宿資訊</h2><div id="hs"></div>
+<p style="font-size:13px">※ 地址請以訂房確認信為準；地圖為 Google 地圖嵌入。</p></section>
+<footer>🍡 一起出發，吃好、買滿、玩好！🇹🇼</footer>
 </main>
 <script>
-var D=[
-{d:'01/09',w:'六',t:'東京・銀座美食',e:'🛍️🍔',n:'',m:'晚餐｜SHAKE SHACK＋FUKUMIMI',i:[['11:00','✈️ 抵達羽田機場','飛機'],['11:00～12:30','🧳 入境、領取行李'],['13:00','🏨 飯店寄放行李'],['13:00～17:30','🛍️ 銀座自由活動／購物'],['18:00','🍔 SHAKE SHACK Tokyo International Forum'],['19:17','🍲 FUKUMIMI GINZA 6',0,1],['20:50','🏨 返回飯店']]},
-{d:'01/10',w:'日',t:'東京 → 山形 → 藏王',e:'🚄',n:'',m:'午餐｜山形美食　晚餐｜藏王溫泉旅館',i:[['08:00','🏨 飯店出發'],['上午','🚄 搭乘山形新幹線前往山形','新幹線'],['11:30～11:40','📍 抵達山形站'],['12:00','🏘️ 七日町・御殿堰周邊散策'],['14:30～15:00','🥩 米澤牛 登起波 山形店',0,1],['16:15','🚌 前往藏王','移動'],['約17:00','♨️ 抵達「界 藏王」',0,1]]},
-{d:'01/11',w:'一',t:'藏王樹冰',e:'❄️🏔️',n:'日本成人之日連假，纜車建議提早搭乘',m:'',i:[['08:00','🏨 飯店出發'],['08:30','🚡 藏王纜車山麓站','纜車'],['08:45～09:00','❄️ 抵達樹冰高原站'],['09:00～12:00','🌨️ 藏王樹冰散策',0,1],['12:00','🚡 搭乘纜車下山','纜車'],['12:30','🏨 返回飯店'],['下午～晚上','♨️ 溫泉／飯店休閒']]},
-{d:'01/12',w:'二',t:'藏王 → 東京・雙牛美食',e:'🥩',n:'',m:'午餐｜人形町今半　晚餐｜肉屋の台所',i:[['08:00','🏨 飯店出發'],['09:00','🚄 山形站'],['上午','🚄 搭乘新幹線返回東京','新幹線'],['11:30～12:00','🏨 飯店寄放行李'],['13:00','🥩 人形町今半 銀座店',0,1],['14:30～18:00','🛍️ 銀座購物／自由活動'],['18:30','🥩 肉屋の台所 Ginza Premium'],['20:04','🏨 返回飯店']]},
-{d:'01/13',w:'三',t:'銀座・壽司＋飛驒牛',e:'🍣',n:'',m:'午餐｜梅丘壽司美登利　晚餐｜飛驒牛 馬喰一代',i:[['08:00～11:30','☀️ 早餐／自由活動'],['12:00','🍣 梅丘壽司美登利 銀座店',0,1],['13:30～17:30','🛍️ 銀座購物'],['18:00','🥩 飛驒牛一頭家 馬喰一代 銀座',0,1],['19:39','🏨 返回飯店']]},
-{d:'01/14',w:'四',t:'富士山・河口湖｜私人包車',e:'🗻',n:'',m:'午餐｜河口湖ほうとう　晚餐｜Shabusen 銀座',i:[['07:30','🚐 飯店出發','包車'],['09:30','🌸 新倉山淺間公園',0,1],['10:30','⛩️ 北口本宮富士淺間神社'],['11:30','💧 忍野八海'],['12:30','🍜 山梨名物「ほうとう」'],['14:00','🗻 河口湖'],['14:30','🚡 富士山全景纜車','纜車',1],['15:30','🌿 大石公園'],['16:00','🚐 返回東京','包車'],['18:30','🥢 Shabusen 銀座店'],['晚間','🏨 返回飯店']]},
-{d:'01/15',w:'五',t:'人形町・日本橋下町漫遊',e:'🏮🍡',n:'今日重點：人形町老街、水天宮、甘酒橫丁、小網神社、日本橋、下町美食',m:'午餐｜人形町下町美食',i:[['08:00','🏨 飯店早餐'],['09:00','🚇 前往人形町','地鐵'],['09:30','⛩️ 水天宮參拜',0,1],['10:00','🏮 人形町老街散策'],['10:30','🍡 傳統和菓子／老舖巡禮'],['11:00','🏮 甘酒橫丁漫步',0,1],['12:00','🍱 人形町午餐'],['13:30','🏮 人形町商店街自由活動'],['14:00','⛩️ 小網神社'],['15:00','🌉 日本橋周邊散步'],['16:00','☕ 咖啡／甜點時間'],['17:00','🚇 返回銀座','地鐵'],['約17:30','🏨 回飯店休息']]},
-{d:'01/16',w:'六',t:'東京 → 羽田 → 台灣',e:'✈️',n:'機場出發時間請依實際回程航班調整',m:'午餐｜敘敘苑',i:[['08:00','🧳 早餐＋整理行李'],['上午','🛍️ 銀座最後採買'],['10:30～11:00','🥩 敘敘苑 銀座Miyuki大道店'],['午餐後','🏨 返回飯店取行李'],['依航班','🚃 前往羽田機場','電車'],['依航班','🚕 或搭計程車前往','計程車'],['依航班','✈️ 搭機返回台灣 🇹🇼','飛機']]}
+var P='#FFFCF6',C='#F2A497',Y='#F6D27A',B='#A8D3E6',G='#B9DAA5';
+function W(bg,s){return '<svg viewBox="0 0 200 80" aria-hidden="true"><rect width="200" height="80" fill="'+bg+'"/><g stroke="#3E3A39" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">'+s+'</g></svg>'}
+var IL=[
+function(){return W(Y,`<rect x="72" y="24" width="44" height="48" fill="${P}"/><path d="M72 24L94 8L116 24Z" fill="${C}"/><circle cx="94" cy="38" r="9" fill="${P}"/><path d="M94 32V38H99" fill="none"/><rect x="79" y="54" width="9" height="10" fill="${B}"/><rect x="100" y="54" width="9" height="10" fill="${B}"/><g class="bob"><rect x="132" y="46" width="24" height="26" rx="4" fill="${C}"/><path d="M138 46V42a6 6 0 0 1 12 0v4" fill="none"/></g><g class="bob b2"><rect x="30" y="54" width="22" height="18" rx="4" fill="${G}"/><path d="M36 54V50a5 5 0 0 1 10 0v4" fill="none"/></g><path d="M0 72H200"/>`)},
+function(){return W(B,`<path d="M110 66L150 20L190 66Z" fill="#9BC4D9"/><path d="M138 33L150 20L162 33L156 31L150 37L144 31Z" fill="${P}"/><g class="sl"><path d="M24 62V44a8 8 0 0 1 8-8H112Q140 38 150 62Z" fill="${P}"/><path d="M24 54H150" stroke="${C}" stroke-width="5"/><rect x="34" y="42" width="10" height="7" rx="2" fill="${B}"/><rect x="60" y="42" width="10" height="7" rx="2" fill="${B}"/><rect x="86" y="42" width="10" height="7" rx="2" fill="${B}"/><path d="M114 42h12l10 8h-22z" fill="${B}"/></g><path d="M0 66H200"/><g class="sn" fill="${P}" stroke-width="1.5"><circle cx="30" cy="8" r="2.5"/><circle cx="80" cy="4" r="2.5"/><circle cx="130" cy="6" r="2.5"/><circle cx="175" cy="2" r="2.5"/></g>`)},
+function(){return W(B,`<path d="M0 10L200 26" fill="none"/><g class="sw"><path d="M131 20V25" fill="none"/><rect x="120" y="25" width="22" height="14" rx="3" fill="${Y}"/></g><path d="M18 74Q10 52 22 38Q32 26 42 38Q54 52 46 74Z" fill="${P}"/><path d="M62 74Q54 48 68 32Q80 20 92 32Q106 48 98 74Z" fill="${P}"/><path d="M118 74Q112 56 124 46Q134 38 144 46Q156 56 150 74Z" fill="${P}"/><path d="M164 74Q158 58 168 50Q176 44 184 50Q192 58 188 74Z" fill="${P}"/><path d="M0 74H200"/><g class="sn" fill="${P}" stroke-width="1.5"><circle cx="50" cy="6" r="2.5"/><circle cx="105" cy="4" r="2.5"/><circle cx="150" cy="8" r="2.5"/><circle cx="190" cy="4" r="2.5"/></g>`)},
+function(){return W(Y,`<g class="cl"><path d="M130 16h30a7 7 0 0 0-3-12 9 9 0 0 0-17 2 6 6 0 0 0-10 10z" fill="${P}"/></g><rect x="26" y="34" width="148" height="38" fill="${C}"/><path d="M26 34Q26 20 40 18Q54 20 54 34Z" fill="${B}"/><path d="M146 34Q146 20 160 18Q174 20 174 34Z" fill="${B}"/><rect x="84" y="28" width="32" height="44" fill="${C}"/><path d="M84 28L100 14L116 28Z" fill="${B}"/><path d="M36 46h8M36 58h8M62 46h8M62 58h8M130 46h8M130 58h8M156 46h8M156 58h8" stroke="${P}" stroke-width="5"/><rect x="94" y="54" width="12" height="18" rx="6" fill="${P}"/>`)},
+function(){return W(G,`<rect x="52" y="28" width="12" height="44" fill="${C}"/><rect x="136" y="28" width="12" height="44" fill="${C}"/><path d="M40 22Q100 12 160 22L158 32H42Z" fill="${C}"/><rect x="58" y="38" width="84" height="7" fill="${C}"/><g class="sw"><path d="M80 45V52" fill="none"/><circle cx="80" cy="60" r="8" fill="${Y}"/></g><g class="sw d2"><path d="M100 45V52" fill="none"/><circle cx="100" cy="60" r="8" fill="${Y}"/></g><g class="sw d3"><path d="M120 45V52" fill="none"/><circle cx="120" cy="60" r="8" fill="${Y}"/></g><path d="M0 72H200"/>`)},
+function(){return W(B,`<rect y="48" width="200" height="32" fill="${P}" stroke="none"/><path d="M50 48L100 8L150 48Z" fill="#9BC4D9"/><path d="M86 21L100 8L114 21L107 19L100 25L93 19Z" fill="${P}"/><path d="M50 48L100 88L150 48Z" fill="#9BC4D9" opacity=".4" stroke="none"/><path d="M0 48H200"/><path d="M14 60h22M24 70h26M120 74h24" fill="none"/><g class="bob"><path d="M150 66Q140 66 142 60Q146 56 158 60Q170 58 170 64Q168 70 150 66Z" fill="${P}"/><path d="M168 62Q176 58 172 48Q170 44 174 44" fill="none"/><path d="M174 44l5 2-5 2z" fill="${C}"/></g>`)},
+function(){return W(C,`<rect x="76" y="38" width="48" height="34" fill="${P}"/><rect x="58" y="30" width="20" height="42" fill="${P}"/><rect x="122" y="30" width="20" height="42" fill="${P}"/><rect x="90" y="22" width="20" height="50" fill="${P}"/><path d="M54 30L68 10L82 30Z" fill="${B}"/><path d="M118 30L132 10L146 30Z" fill="${B}"/><path d="M86 22L100 4L114 22Z" fill="${Y}"/><path d="M94 72V62a6 6 0 0 1 12 0v10Z" fill="${Y}"/><g class="tw"><path d="M30 20h14M37 13v14M32 15l10 10M42 15l-10 10" stroke="${Y}" fill="none"/></g><g class="tw d2"><path d="M158 26h14M165 19v14M160 21l10 10M170 21l-10 10" stroke="${P}" fill="none"/></g><path d="M0 72H200"/>`)},
+function(){return W(B,`<g class="cl"><path d="M20 24h34a8 8 0 0 0-3-14 10 10 0 0 0-19 2 7 7 0 0 0-12 12z" fill="${P}"/></g><g class="sl"><path d="M40 44Q40 34 60 34H130Q160 36 168 44Q160 52 130 52H60Q40 52 40 44Z" fill="${P}"/><path d="M44 45H166" stroke="${C}" stroke-width="4"/><path d="M76 40h6M90 40h6M104 40h6M118 40h6" stroke="${B}" stroke-width="4"/><path d="M90 50L70 70H96L120 50Z" fill="${Y}"/><path d="M48 36L40 20H54L64 35Z" fill="${C}"/></g>`)}
 ];
-var T=['護照（效期 6 個月以上）','Visit Japan Web 入境登錄','買網卡／eSIM','兌換日圓現金','旅遊保險','確認山形新幹線、界 藏王訂位','確認富士山私人包車','預約餐廳（登起波、人形町今半、壽司美登利等）','保暖衣物：藏王樹冰很冷','退稅用護照＋大行李空間'];
-var tab=document.getElementById('days'),tl=document.getElementById('tl'),cur=0,first=true;
-function show(k){cur=k;
+var H={g:{n:'千禧三井花園飯店 東京',a:'〒104-0061 東京都中央區銀座 5-11-1',q:'千禧三井花園飯店 東京 銀座5-11-1',d:'01/09、01/12～01/15（共 5 晚）'},z:{n:'界 藏王',a:'〒990-2301 山形縣山形市藏王溫泉 940-1',q:'界 蔵王 山形市蔵王温泉940-1',d:'01/10～01/11（共 2 晚）'}};
+function hc(k,lb){var h=H[k];return '<div class="card hc" data-k="'+k+'">'+(lb?'<span class="lb">'+lb+'</span>':'')+'<h3>🏨 '+h.n+'</h3><div>📍 '+h.a+'</div><div>🗓️ '+h.d+'</div><div class="mapbox"></div><button class="mb">🗺️ 載入嵌入地圖</button><a class="mb" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(h.q)+'">開啟 Google 地圖 ↗</a></div>'}
+document.addEventListener('click',function(e){var b=e.target.closest('button.mb');if(!b)return;var c=b.closest('.hc'),h=H[c.dataset.k];c.querySelector('.mapbox').innerHTML='<iframe loading="lazy" title="'+h.n+' 地圖" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q='+encodeURIComponent(h.q)+'&hl=zh-TW&z=16&output=embed"></iframe>';b.remove()});
+document.getElementById('hs').innerHTML=hc('g')+'<div style="height:12px"></div>'+hc('z');
+var D=[
+{d:'01/09',w:'六',t:'東京・銀座美食',e:'🛍️🍔',h:'g',n:'',m:'晚餐｜SHAKE SHACK＋FUKUMIMI',i:[['11:00','✈️ 老闆 & 阿西小隊 抵達羽田機場','飛機'],['12:30','🧳 入境、領取行李'],['13:00','🏨 千禧三井花園飯店寄放行李'],['16:00','🚆 台中小隊抵達銀座，飯店會合 Check in'],['17:30','🛍️ 銀座自由活動／購物'],['18:00','🍔 SHAKE SHACK Tokyo International Forum 或 FUKUMIMI GINZA 6'],['19:00','🚆 玟樺小隊抵達銀座，會合領房間鑰匙']]},
+{d:'01/10',w:'日',t:'東京 → 山形 → 藏王',e:'🚄',h:'z',n:'記得跟櫃台預約 1/12 退房搭回山形的計程車',m:'午餐｜車站便當　晚餐｜「界 藏王」',i:[['08:30','🏨 飯店退房，出發東京車站'],['09:00','🍱 東京車站挑車站便當'],['10:00','🚄 新幹線〈翼133〉往山形','新幹線'],['12:43','📍 抵達山形站'],['13:30','🚌 前往「界 藏王」','巴士/計程車'],['14:30','♨️ 抵達「界 藏王」Check in',0,1],['17:30','🍴 「界 藏王」飯店晚餐'],['19:30','❄️ 夜間巡航號樹冰幻想之旅（夜間點燈）※須預約',0,1]]},
+{d:'01/11',w:'一',t:'藏王樹冰',e:'❄️🏔️',h:'z',n:'日本成人之日連假，纜車建議提早搭乘',m:'早餐｜「界 藏王」　午餐｜藏王山頂餐廳 或 溫泉街餐廳　晚餐｜「界 藏王」',i:[['07:00','🍴 飯店早餐'],['08:00','🏨 飯店出發'],['08:30','🚡 藏王纜車山麓站','纜車'],['08:45～09:00','❄️ 抵達樹冰高原站'],['09:00～12:00','🌨️ 藏王樹冰散策',0,1],['12:00','🚡 搭乘纜車下山','纜車'],['12:30','🏨 返回飯店'],['下午～晚上','♨️ 溫泉／飯店休閒／溫泉街']]},
+{d:'01/12',w:'二',t:'藏王 → 東京',e:'🥩',h:'g',n:'',m:'早餐｜「界 藏王」　午餐｜山形美食　晚餐｜東京車站極味屋漢堡排等美食',i:[['08:00','🍴 飯店早餐'],['10:00','🚌 退房，搭回山形站','計程車/巴士'],['11:00','🍜 山形站簡易用餐 & 逛逛'],['13:04','🚄 新幹線〈翼142〉往東京','新幹線'],['16:30','🥩 東京車站〈八重北食堂〉極味屋等'],['18:00','🏨 千禧三井花園飯店 Check in'],['18:30','🛍️ 自由活動']]},
+{d:'01/13',w:'三',t:'人形町・日本橋下町漫遊',e:'🏮🍡',h:'g',n:'今日重點：人形町老街、水天宮、甘酒橫丁、小網神社、日本橋、下町美食',m:'早餐｜三井花園飯店　午餐｜人形町下町美食　晚餐｜SHABUSEN GINZA 涮涮鍋',i:[['08:00','🍴 飯店早餐'],['09:00','🚇 前往人形町','地鐵'],['09:30','⛩️ 水天宮參拜',0,1],['10:00','🏮 人形町老街散策'],['10:30','🍡 傳統和菓子／老舖巡禮／甘酒橫丁漫步',0,1],['12:00','⛩️ 小網神社洗錢',0,1],['12:30','🍱 藏前周邊午餐、散步'],['15:30','☕ 咖啡／甜點時間'],['16:30','🌉 日本橋','地鐵'],['18:00','🚇 返回銀座','地鐵'],['18:30','🍲 SHABUSEN GINZA 涮涮鍋 ※須排隊'],['20:00','🛍️ 自由活動']]},
+{d:'01/14',w:'四',t:'富士山・河口湖｜私人包車',e:'🗻',h:'g',n:'',m:'早餐｜三井花園飯店　午餐｜河口湖ほうとう　晚餐｜肉屋の台所 Ginza Premium',i:[['07:30','🚐 飯店出發','包車'],['09:30','🌸 新倉山淺間公園',0,1],['10:30','⛩️ 北口本宮富士淺間神社'],['11:30','🚡 富士山全景纜車','纜車',1],['12:30','🍜 山梨名物「ほうとう」'],['14:00','🦢 山中湖親水公園 餵天鵝 拍逆富士',0,1],['14:30','☕ THE PARK 咖啡廳 舒芙蕾 ※眺望富士山'],['15:30','🌿 大石公園'],['16:00','🚐 返回東京','包車'],['19:00','🥩 肉屋の台所 Ginza Premium'],['晚間','🏨 返回飯店']]},
+{d:'01/15',w:'五',t:'小隊分流：自由活動／迪士尼',e:'🏰',h:'g',n:'',m:'早餐｜三井花園飯店',i:[['全天','🛋️ 小隊1：悠閒自由活動'],['全天','🏰 小隊2：迪士尼',0,1]]},
+{d:'01/16',w:'六',t:'東京 → 羽田 → 台灣',e:'✈️',h:'',n:'機場出發時間請依實際回程航班調整',m:'',i:[['08:00','🧳 早餐＋整理行李'],['上午','🛍️ 銀座最後採買、返回飯店取行李'],['依航班','🚃 各小隊原地解散前往機場','電車/計程車'],['依航班','✈️ 搭機返回台灣 🇹🇼','飛機']]}
+];
+var T=['護照（效期 6 個月以上）','Visit Japan Web 入境登錄','買網卡／eSIM','兌換日圓現金','旅遊保險','山形新幹線〈翼133〉〈翼142〉車票','預約夜間巡航號樹冰幻想之旅（1/10 晚）','櫃台預約 1/12 退房回山形站的計程車','確認富士山私人包車','小隊 2 迪士尼門票','保暖衣物：藏王樹冰很冷','退稅用護照＋大行李空間'];
+var tab=document.getElementById('days'),tl=document.getElementById('tl'),first=true;
+function show(k){
 tab.innerHTML=D.map(function(x,j){return '<button class="day" role="tab" aria-selected="'+(j==k)+'" data-k="'+j+'"><small>Day '+(j+1)+'</small><b>'+x.d+'</b><small>'+x.w+'</small></button>'}).join('');
-var x=D[k];
-tl.className='';
-tl.innerHTML='<div class="dh"><small>Day '+(k+1)+'｜'+x.d+'（'+x.w+'）</small><h3>'+x.e+' '+x.t+'</h3></div><ul class="tl">'+x.i.map(function(a){return '<li'+(a[3]?' class="must"':'')+'><span class="tm">'+a[0]+(a[2]?'<span class="tg t-'+a[2]+'">'+a[2]+'</span>':'')+'</span>'+(a[3]?'<span class="must-tag">必去</span>':'')+a[1]+'</li>'}).join('')+'</ul>'+(x.m?'<div class="meals card">🍴 '+x.m+'</div>':'')+(x.n?'<div class="note">📌 '+x.n+'</div>':'');
+var x=D[k];tl.className='';
+tl.innerHTML='<div class="ill">'+IL[k]()+'</div><div class="dh"><small>Day '+(k+1)+'｜'+x.d+'（'+x.w+'）</small><h3>'+x.e+' '+x.t+'</h3></div><ul class="tl">'+x.i.map(function(a){var tg=a[2]?a[2].split('/').map(function(t){return '<span class="tg t-'+t+'">'+t+'</span>'}).join(''):'';return '<li'+(a[3]?' class="must"':'')+'><span class="tm">'+a[0]+tg+'</span>'+(a[3]?'<span class="must-tag">必去</span>':'')+a[1]+'</li>'}).join('')+'</ul>'+(x.m?'<div class="meals card">🍴 '+x.m+'</div>':'')+(x.n?'<div class="note">📌 '+x.n+'</div>':'')+(x.h?hc(x.h,'今晚住宿'):'');
 void tl.offsetWidth;tl.className='pop';
-var b=tab.children[k];if(b&&!first){b.scrollIntoView({inline:'center',block:'nearest',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}
+var b=tab.children[k];if(b&&!first)b.scrollIntoView({inline:'center',block:'nearest',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
 first=false}
 tab.addEventListener('click',function(e){var b=e.target.closest('.day');if(b)show(+b.dataset.k)});
 show(0);
-var s0=new Date('2027-01-09T00:00:00+08:00'),e0=new Date('2027-01-17T00:00:00+08:00'),now=new Date(),dd=Math.ceil((s0-now)/864e5),cd=document.getElementById('cd');
-if(now>=e0)cd.innerHTML='旅程已完成 🍡';else if(now>=s0)cd.innerHTML='旅程進行中 🎌';else document.getElementById('n').textContent=dd;
+var s0=new Date('2027-01-09T00:00:00+08:00'),e0=new Date('2027-01-17T00:00:00+08:00'),now=new Date(),cd=document.getElementById('cd');
+if(now>=e0)cd.innerHTML='旅程已完成 🍡';else if(now>=s0)cd.innerHTML='旅程進行中 🎌';else document.getElementById('n').textContent=Math.ceil((s0-now)/864e5);
 var st={};try{st=JSON.parse(localStorage.getItem('tokyo27')||'{}')}catch(e){}
 var ul=document.getElementById('tdl'),bar=document.getElementById('bar');
 ul.innerHTML=T.map(function(t,j){return '<li><label><input type="checkbox" data-j="'+j+'"'+(st[j]?' checked':'')+'><span>'+t+'</span></label></li>'}).join('');

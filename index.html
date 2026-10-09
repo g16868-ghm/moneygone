@@ -109,8 +109,8 @@ footer{text-align:center;font-size:13px;padding-bottom:20px}
 <section id="flight"><h2>✈️ 航班</h2>
 <div class="flight">
 <div class="fl"><span class="big">🛫</span><div><small>01/09（六）去程</small><b>老闆 &amp; 阿西小隊</b><small>11:00 抵達羽田機場</small></div></div>
-<div class="fl"><span class="big">🚆</span><div><small>01/09（六）去程</small><b>台中小隊</b><small>16:00 抵達銀座，飯店會合 Check in</small></div></div>
-<div class="fl"><span class="big">🚆</span><div><small>01/09（六）去程</small><b>玟樺小隊</b><small>19:00 抵達銀座，會合領房間鑰匙</small></div></div>
+<div class="fl"><span class="big">🛫</span><div><small>01/09（六）去程</small><b>台中小隊</b><small>16:00 抵達銀座，飯店會合 Check in</small></div></div>
+<div class="fl"><span class="big">🛫</span><div><small>01/09（六）去程</small><b>玟樺小隊</b><small>19:00 抵達銀座，會合領房間鑰匙</small></div></div>
 <div class="fl"><span class="big">🛬</span><div><small>01/16（六）回程</small><b>羽田 → 台灣</b><small>各小隊原地解散前往機場，時間依實際航班</small></div></div>
 </div></section>
 
@@ -147,7 +147,7 @@ function hc(k,lb){var h=H[k];return '<div class="card hc" data-k="'+k+'">'+(lb?'
 document.addEventListener('click',function(e){var b=e.target.closest('button.mb');if(!b)return;var c=b.closest('.hc'),h=H[c.dataset.k];c.querySelector('.mapbox').innerHTML='<iframe loading="lazy" title="'+h.n+' 地圖" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q='+encodeURIComponent(h.q)+'&hl=zh-TW&z=16&output=embed"></iframe>';b.remove()});
 document.getElementById('hs').innerHTML=hc('g')+'<div style="height:12px"></div>'+hc('z');
 var D=[
-{d:'01/09',w:'六',t:'東京・銀座美食',e:'🛍️🍔',h:'g',n:'',m:'晚餐｜SHAKE SHACK＋FUKUMIMI',i:[['11:00','✈️ 老闆 & 阿西小隊 抵達羽田機場','飛機'],['12:30','🧳 入境、領取行李'],['13:00','🏨 千禧三井花園飯店寄放行李'],['16:00','🚆 台中小隊抵達銀座，飯店會合 Check in'],['17:30','🛍️ 銀座自由活動／購物'],['18:00','🍔 SHAKE SHACK Tokyo International Forum 或 FUKUMIMI GINZA 6'],['19:00','🚆 玟樺小隊抵達銀座，會合領房間鑰匙']]},
+{d:'01/09',w:'六',t:'東京・銀座美食',e:'🛍️🍔',h:'g',n:'',m:'晚餐｜SHAKE SHACK＋FUKUMIMI',i:[['11:00','✈️ 老闆 & 阿西小隊 抵達羽田機場','飛機'],['12:30','🧳 入境、領取行李'],['13:00','🏨 千禧三井花園飯店寄放行李'],['16:00','✈️ 台中小隊抵達銀座，飯店會合 Check in'],['17:30','🛍️ 銀座自由活動／購物'],['18:00','🍔 SHAKE SHACK Tokyo International Forum 或 FUKUMIMI GINZA 6'],['19:00','✈️ 玟樺小隊抵達銀座，會合領房間鑰匙']]},
 {d:'01/10',w:'日',t:'東京 → 山形 → 藏王',e:'🚄',h:'z',n:'記得跟櫃台預約 1/12 退房搭回山形的計程車',m:'午餐｜車站便當　晚餐｜「界 藏王」',i:[['08:30','🏨 飯店退房，出發東京車站'],['09:00','🍱 東京車站挑車站便當'],['10:00','🚄 新幹線〈翼133〉往山形','新幹線'],['12:43','📍 抵達山形站'],['13:30','🚌 前往「界 藏王」','巴士/計程車'],['14:30','♨️ 抵達「界 藏王」Check in',0,1],['17:30','🍴 「界 藏王」飯店晚餐'],['19:30','❄️ 夜間巡航號樹冰幻想之旅（夜間點燈）※須預約',0,1]]},
 {d:'01/11',w:'一',t:'藏王樹冰',e:'❄️🏔️',h:'z',n:'日本成人之日連假，纜車建議提早搭乘',m:'早餐｜「界 藏王」　午餐｜藏王山頂餐廳 或 溫泉街餐廳　晚餐｜「界 藏王」',i:[['07:00','🍴 飯店早餐'],['08:00','🏨 飯店出發'],['08:30','🚡 藏王纜車山麓站','纜車'],['08:45～09:00','❄️ 抵達樹冰高原站'],['09:00～12:00','🌨️ 藏王樹冰散策',0,1],['12:00','🚡 搭乘纜車下山','纜車'],['12:30','🏨 返回飯店'],['下午～晚上','♨️ 溫泉／飯店休閒／溫泉街']]},
 {d:'01/12',w:'二',t:'藏王 → 東京',e:'🥩',h:'g',n:'',m:'早餐｜「界 藏王」　午餐｜山形美食　晚餐｜東京車站極味屋漢堡排等美食',i:[['08:00','🍴 飯店早餐'],['10:00','🚌 退房，搭回山形站','計程車/巴士'],['11:00','🍜 山形站簡易用餐 & 逛逛'],['13:04','🚄 新幹線〈翼142〉往東京','新幹線'],['16:30','🥩 東京車站〈八重北食堂〉極味屋等'],['18:00','🏨 千禧三井花園飯店 Check in'],['18:30','🛍️ 自由活動']]},
